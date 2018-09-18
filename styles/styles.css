@@ -7,6 +7,15 @@ div {
   margin-top: 0px;
 }
 
+h1.b{
+	font: 50px Andale Mono, monospace;
+}
+
+p.bio{
+	font: 15px Andale Mono, monospace;
+}
+
+
 .image-section {
   display: flex;
   justify-content: center;
@@ -17,6 +26,7 @@ div {
   margin-left: 0px;
   background-color: white;
 }
+
 .textWithBlurredBg{
     width:300px;
     height:auto;
@@ -29,13 +39,13 @@ div {
   .textWithBlurredBg img{
     width:100%;
     height:100%;
-    transition:.1s;
+    transition:.01s;
     border-radius:4px;
   }
   
   .textWithBlurredBg:hover img{
     filter:blur(2px) brightness(60%);
-    box-shadow:0 0 16px white;
+    box-shadow:0 0 16px gray;
   }
    
   .textWithBlurredBg :not(img){
@@ -46,7 +56,7 @@ div {
     text-align:center;
     color:#fff;
     opacity:0;
-    transition:.3s;
+    transition:.01s;
   }
   
   .textWithBlurredBg h3{
