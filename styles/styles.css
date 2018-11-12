@@ -1,9 +1,17 @@
 body {
   text-align: center;
-//  background-image:url(/images/graynn.svg);
+//  background-image:url(/images/whitenn.svg);
 //  background-size:cover;
-background-color: #FFFFFF
+  background-color: #FFFFFF
 }
+
+//body {
+//  text-align: center;
+//  background-image:url(/images/whitenn.svg);
+//  background-size:cover;
+//  background-color: #C9C9C9
+}
+
 
 .top-social{
   width:30px;
@@ -16,6 +24,9 @@ background-color: #FFFFFF
   padding-right: 20px;
 }
 
+body {
+  transition: 200ms ease;
+}
 
 .icon:hover{
   transform:scale(1.2);
@@ -29,7 +40,8 @@ div {
     margin: auto;
     width: 50%;
     padding: 20px;
-    font: 50px Andale Mono, monospace;
+    font: 70px Gill Sans, monospace;
+    font-weight: 600;
 }
 
 
@@ -37,14 +49,42 @@ p.bio{
   margin: auto;
   width: 70%;
   padding: 10px;
-	font: 17px Andale Mono, monospace;
+	font: 17px Gill Sans, monospace;
 }
 
 p.tiny{
   margin: auto;
   width: 70%;
   padding: 10px;
-  font: 12px Andale Mono, monospace;
+  font: 12px Gill Sans, monospace;
+}
+
+p.left{
+  text-align: left;
+  left: 0px;
+  font: 17px Gill Sans, monospace;
+}
+
+ul.circlebullet{
+  margin-top: -20px;
+  text-align: left;
+  list-style-type: circle;
+}
+
+li.listItem{
+  padding-left: 12px;
+  padding-top: 0px;
+  font: 25px Gill Sans, monospace;
+}
+
+h4.subHeader{
+  text-align: left;
+  font: 25px Gill Sans, monospace;
+}
+
+h4.projHeader{
+  text-align: left;
+  font: 30px Gill Sans, monospace;  
 }
 
 .image-section {
