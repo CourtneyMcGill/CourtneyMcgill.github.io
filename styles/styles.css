@@ -1,8 +1,18 @@
+
 body {
   text-align: center;
-//  background-image:url(/images/whitenn.svg);
-//  background-size:cover;
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
+  transition: 10ms ease;
+  margin:0px;
+  padding:0px;
+}
+
+#homeBody{
+  text-align: center;
+  background-color: #FFFFFF;
+  transition: 10ms ease;
+  margin:0px;
+  padding:0px;
 }
 
 //body {
@@ -12,10 +22,41 @@ body {
 //  background-color: #C9C9C9
 }
 
+.icon:hover{
+  transform:scale(1.2);
+}
 
-.top-social{
-  width:30px;
-  height:30px;
+.tile2{
+  background-color: gray;
+  float:left; 
+  width:120px;
+  min-height:100px;
+  overflow:hidden;
+}
+
+
+div.project_body{
+  padding:12px;
+}
+
+div.fullHead{
+  width:97%;
+  vertical-align: middle; 
+  margin-left:15px;
+}
+
+div.headBlock{
+  display:flex;
+  align-items:baseline;
+}
+
+  .returnHome{
+    font: 20px Gill Sans, monospace;
+  }
+
+.top-social2{
+  width:3%;
+  height:auto;
   position:relative;
   z-index:100;
   float:right;
@@ -24,32 +65,44 @@ body {
   padding-right: 20px;
 }
 
-body {
-  transition: 200ms ease;
+.top-social{
+  width:30px;
+  height:70px;
+  position:relative;
+  z-index:100;
+  float:right;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 40px;
 }
 
-.icon:hover{
-  transform:scale(1.2);
-}
+.centerHeaderTop {
+    margin: 0;
+    text-align: left;
+    font: 90px Gill Sans, monospace;
+    font-weight: 500;
 
-div {
-  margin-top: 0px;
 }
-
 .centerHeader {
-    margin: auto;
-    width: 50%;
-    padding: 20px;
-    font: 70px Gill Sans, monospace;
-    font-weight: 600;
+    margin: 0;
+    text-align: left;
+    font: 90px Gill Sans, monospace;
+    font-weight: 500;
 }
-
 
 p.bio{
   margin: auto;
-  width: 70%;
+  text-align: left;
+  width: 100%;
   padding: 10px;
-	font: 17px Gill Sans, monospace;
+	font: 20px Gill Sans, monospace;
+}
+
+p.sub_head{
+  margin-left: 10px;
+  text-align: left;
+  padding: 20px;
+  font: 20px Gill Sans, monospace;
 }
 
 p.tiny{
@@ -74,7 +127,7 @@ ul.circlebullet{
 li.listItem{
   padding-left: 12px;
   padding-top: 0px;
-  font: 25px Gill Sans, monospace;
+  font: 20px Gill Sans, monospace;
 }
 
 h4.subHeader{
@@ -87,41 +140,54 @@ h4.projHeader{
   font: 30px Gill Sans, monospace;  
 }
 
-.image-section {
+
+.photoArea{
   display: flex;
-  justify-content: center;
+  width:100%;
+  height:100%;
+  background-color: #F0F0F0;
+}
+
+//.image-section {
+// display: flex;
+//  justify-content: center;
+//}
+
+.tile{
+  width:25%;
+  height:auto;
+  height:auto;
 }
 
 .section-style {
   margin-right: 0px;
   margin-left: 0px;
-  background-color: white;
+  margin-top: 0px;
+  background-color: #F0F0F0;
 }
 
-
-.textWithBlurredBg{
-    width:300px;
+.boxInner .textWithBlurredBg{
+    width:100%;
     height:auto;
     display:inline-block;
     position:relative;
     transition:.01s;
-    margin:4px;
   }
   
-  .textWithBlurredBg img{
+.boxInner .textWithBlurredBg img{
     width:100%;
     height:100%;
     transition:.01s;
     border-radius:4px;
   }
   
-  .textWithBlurredBg:hover img{
+.boxInner .textWithBlurredBg:hover img{
     filter:blur(2px) brightness(60%);
     box-shadow:0 0 16px gray;
   }
-   
+  
 
-  .textWithBlurredBg :not(img){
+ .boxInner .textWithBlurredBg :not(img){
     position:absolute;
     z-index:1;
     top:30%;
@@ -132,10 +198,92 @@ h4.projHeader{
     transition:.01s;
   }
   
-  .textWithBlurredBg h3{
+.boxInner .textWithBlurredBg h3{
     top:50%
   }
   
-  .textWithBlurredBg:hover :not(img){
+.boxInner .textWithBlurredBg:hover :not(img){
     opacity:1;
   }
+
+//
+//
+
+.master-wrap{
+  overflow: hidden;
+}
+
+.banner {
+  background-color: #F0F0F0;
+  width: 100%;
+  padding-bottom: 1%;
+  overflow: hidden;
+}
+
+.top-social3{
+  width:3%;
+  position:relative;
+  float:right;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.fullHead3{
+  width:97%;
+  position:relative;
+  vertical-align: middle; 
+  margin-left:15px;
+}
+
+.wrap {
+   overflow: hidden;
+}
+.box {
+   float: left;
+   position: relative;
+   width: 25%;
+   padding-bottom: 100%;
+}
+.boxInner {
+   position: absolute;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   overflow: hidden;
+}
+.boxInner img {
+   width: 100%;
+}
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+   
+}
+@media only screen and (max-width : 800px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 88%;
+   }
+}
+
+@media only screen and (max-width : 1290px) and (min-width : 801px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 100%;
+   }
+}
+
+
+
+
+
+
+
