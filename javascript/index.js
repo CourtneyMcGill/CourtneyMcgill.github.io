@@ -94,7 +94,7 @@ setInterval(function() {
 //                  console.log("decrementing green to ", first_green);
             }     
       }
-      console.log('revised are:', first_red, first_blue, first_green);
+//      console.log('revised are:', first_red, first_blue, first_green);
       var hex_red = first_red.toString(16);
       if (hex_red.length < 2){
             hex_red = '0' + hex_red
